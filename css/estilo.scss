@@ -1,1 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
 
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root{
+    font-size: 62.5%;
+}
+
+$primary-color: hsl(170, 100%, 26%);
+$headline: hsl(210, 11%, 15%);
+$paragraph: hsl(210, 9%, 31%);
+
+
+body{
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+h4{
+    font-size: 1.4rem;
+    color: $primary-color;
+}
+
+h1{
+    font-size: 3.4rem;
+    color: $headline;
+    line-height: 130%;
+}
+
+p{
+    font-size: 1.8rem;
+    line-height: 150%;
+    font-weight: 400;
+    color: $paragraph;
+}
+
+button{
+    background: $primary-color;
+}
