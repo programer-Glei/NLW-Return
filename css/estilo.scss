@@ -23,24 +23,46 @@ body{
     text-align: center;
 }
 
-h4{
-    font-size: 1.4rem;
-    color: $primary-color;
-}
+header{
+    width: 37.5rem;
+    margin: 0 auto;
+    margin-top: 4.1rem;
 
-h1{
-    font-size: 3.4rem;
-    color: $headline;
-    line-height: 130%;
-}
-
-p{
-    font-size: 1.8rem;
-    line-height: 150%;
-    font-weight: 400;
-    color: $paragraph;
-}
-
-button{
-    background: $primary-color;
+    h4{
+        font-size: 1.4rem;
+        color: $primary-color;
+        margin-bottom: 1.6rem;
+    }
+    
+    h1{
+        font-size: 3.4rem;
+        color: $headline;
+        line-height: 130%;
+        margin-bottom: 2.4rem;
+    }
+    
+    p{
+        font-size: 1.8rem;
+        line-height: 150%;
+        font-weight: 400;
+        color: $paragraph;
+        margin-bottom: 3.2rem;
+    }
+    
+    button{
+        width: 26.3rem;
+        height: 6.2rem;
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        font-weight: 700;
+        color: white;
+        background: $primary-color;
+        border-radius: 4rem;
+        margin-bottom: 6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.6rem;
+        margin: 0 auto;
+    }
 }
