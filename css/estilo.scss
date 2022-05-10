@@ -33,18 +33,26 @@ body{
 
 /* NAVIGATION */
 nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     height: $nav-height;
     position: fixed;
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-}
 
-nav.scroll{
-    
+    .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &.scroll{
+        background: $primary-color;
+        width: 100vw;
+
+        svg path{
+            fill: white;
+        }
+    }
 }
 
 /* HEADER */

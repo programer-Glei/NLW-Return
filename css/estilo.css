@@ -27,6 +27,15 @@ body {
 
 /* NAVIGATION */
 nav {
+  height: 7.2rem;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+nav .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,12 +45,15 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 7.2rem;
-  position: fixed;
-  top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+}
+
+nav.scroll {
+  background: #00856f;
+  width: 100vw;
+}
+
+nav.scroll svg path {
+  fill: white;
 }
 
 /* HEADER */
