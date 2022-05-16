@@ -52,10 +52,6 @@ nav.scroll {
   width: 100vw;
 }
 
-nav.scroll svg path {
-  fill: white;
-}
-
 /* HEADER */
 header {
   margin-top: calc(4.1rem + 7.2rem);
