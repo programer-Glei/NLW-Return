@@ -56,6 +56,21 @@ nav{
     }
 }
 
+/* ==== MENU-EXPANDED ==============*/
+body.menu-expanded{
+
+    .menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: $primary-color;
+    }
+
+    nav{
+        position: relative;
+    }
+}
+
 /* HEADER */
 
 header{

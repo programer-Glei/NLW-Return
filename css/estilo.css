@@ -57,6 +57,18 @@ nav.scroll {
   width: 100vw;
 }
 
+/* ==== MENU-EXPANDED ==============*/
+body.menu-expanded .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #00856f;
+}
+
+body.menu-expanded nav {
+  position: relative;
+}
+
 /* HEADER */
 header {
   margin-top: calc(4.1rem + 7.2rem);
