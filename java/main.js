@@ -1,6 +1,6 @@
 
 let logo = document.querySelector('#logo')
-let menu = document.querySelector('.menu')
+let menu = document.querySelector('.imgmenu')
 
 function onScroll(){
 
