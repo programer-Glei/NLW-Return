@@ -58,11 +58,23 @@ nav.scroll {
 }
 
 /* ==== MENU-EXPANDED ==============*/
+.menu, .close-menu, .open-menu {
+  opacity: 0;
+  visibility: hidden;
+}
+
 body.menu-expanded .menu {
   position: fixed;
   top: 0;
   left: 0;
   background: #00856f;
+  width: 100vw;
+  height: 100vh;
+}
+
+body.menu-expanded .menu, body.menu-expanded .close-menu {
+  opacity: 1;
+  visibility: visible;
 }
 
 body.menu-expanded nav {
