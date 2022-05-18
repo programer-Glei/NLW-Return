@@ -63,6 +63,7 @@ nav{
 }
 
 body.menu-expanded{
+    overflow: hidden;
 
     .menu{
         position: fixed;
@@ -71,6 +72,25 @@ body.menu-expanded{
         background: $primary-color;
         width: 100vw;
         height: 100vh;
+
+        .social-links{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 3.2rem;
+        }
+
+        .button{
+            background: white;
+            border-radius: 4rem;
+            font-weight: 700;
+            font-size: 1.8rem;
+            line-height: 2.3rem;
+            text-transform: uppercase;
+            color: #00856f;
+            display: inline-block;
+            padding: 1.6rem 3.2rem;
+        }
     }
 
     .menu,.close-menu{

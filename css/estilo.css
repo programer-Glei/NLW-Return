@@ -63,6 +63,10 @@ nav.scroll {
   visibility: hidden;
 }
 
+body.menu-expanded {
+  overflow: hidden;
+}
+
 body.menu-expanded .menu {
   position: fixed;
   top: 0;
@@ -70,6 +74,31 @@ body.menu-expanded .menu {
   background: #00856f;
   width: 100vw;
   height: 100vh;
+}
+
+body.menu-expanded .menu .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3.2rem;
+}
+
+body.menu-expanded .menu .button {
+  background: white;
+  border-radius: 4rem;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.3rem;
+  text-transform: uppercase;
+  color: #00856f;
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
 }
 
 body.menu-expanded .menu, body.menu-expanded .close-menu {
