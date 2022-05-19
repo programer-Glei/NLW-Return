@@ -42,6 +42,7 @@ nav {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  padding-block: 1.6rem;
 }
 
 nav .wrapper {
@@ -75,11 +76,13 @@ body.menu-expanded #logo {
 }
 
 body.menu-expanded #logo2, body.menu-expanded .close-menu {
+  display: inline;
   position: relative;
   z-index: 1;
 }
 
 body.menu-expanded .menu {
+  display: block;
   position: fixed;
   top: 0;
   left: 0;
