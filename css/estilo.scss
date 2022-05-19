@@ -36,6 +36,10 @@ body{
     padding-inline: 2.4rem;
 }
 
+#logo2{
+    display: none;
+}
+
 /* NAVIGATION */
 nav{
     height: $nav-height;
@@ -57,13 +61,21 @@ nav{
 }
 
 /* ==== MENU-EXPANDED ==============*/
-.menu,.close-menu,.open-menu{
-    opacity: 0;
-    visibility: hidden;
+.menu,.close-menu{
+    display: none;
 }
 
 body.menu-expanded{
     overflow: hidden;
+
+    #logo{
+        display: none;
+    }
+
+    #logo2,.close-menu{
+        position: relative;
+        z-index: 1;
+    }
 
     .menu{
         position: fixed;
@@ -72,6 +84,7 @@ body.menu-expanded{
         background: $primary-color;
         width: 100vw;
         height: 100vh;
+        padding-top: 7.2rem;
 
         ul:nth-child(1){
             display: flex;

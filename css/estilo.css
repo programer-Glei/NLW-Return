@@ -30,6 +30,10 @@ body {
   padding-inline: 2.4rem;
 }
 
+#logo2 {
+  display: none;
+}
+
 /* NAVIGATION */
 nav {
   height: 7.2rem;
@@ -58,13 +62,21 @@ nav.scroll {
 }
 
 /* ==== MENU-EXPANDED ==============*/
-.menu, .close-menu, .open-menu {
-  opacity: 0;
-  visibility: hidden;
+.menu, .close-menu {
+  display: none;
 }
 
 body.menu-expanded {
   overflow: hidden;
+}
+
+body.menu-expanded #logo {
+  display: none;
+}
+
+body.menu-expanded #logo2, body.menu-expanded .close-menu {
+  position: relative;
+  z-index: 1;
 }
 
 body.menu-expanded .menu {
@@ -74,6 +86,7 @@ body.menu-expanded .menu {
   background: #00856f;
   width: 100vw;
   height: 100vh;
+  padding-top: 7.2rem;
 }
 
 body.menu-expanded .menu ul:nth-child(1) {
