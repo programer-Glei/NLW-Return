@@ -46,6 +46,25 @@ body{
 
 section{
     padding-block: 10rem;
+
+    .header{
+        h4{
+            font-size: 1.4rem;
+            line-height: 150%;
+            letter-spacing: 0.8rem;
+            text-transform: uppercase;
+            color: $primary-color;
+            margin-bottom: 1.6rem;
+        }
+
+        h2{
+            font-size: 3rem;
+            line-height: 3.9rem;
+            color: $headline;
+            margin-bottom: 6rem;
+        }
+
+    }
 }
 
 #logo2{
@@ -243,23 +262,6 @@ header{
 
 /* ==== SERVICES ==============*/
 #services{
-    .header{
-        h4{
-            font-size: 1.4rem;
-            line-height: 150%;
-            letter-spacing: 0.8rem;
-            text-transform: uppercase;
-            color: $primary-color;
-            margin-bottom: 1.6rem;
-        }
-
-        h2{
-            font-size: 3rem;
-            line-height: 3.9rem;
-            color: $headline;
-            margin-bottom: 6rem;
-        }
-    }
 
     .cards{
         display: flex;
@@ -275,6 +277,39 @@ header{
             h3{
                 margin-block: 1.6rem;
             }
+
+            p{
+                font-weight: 400;
+                font-size: 1.6rem;
+                line-height: 150%;
+                color: $paragraph;
+            }
         }
+    }
+}
+
+/* ==== ABOUT ==============*/
+
+#about{
+    background-color: $brand-beige;
+    .header{
+        h2{
+            margin-bottom: 2.4rem;
+            text-align: left;
+        }
+
+        h4{
+            text-align: left;
+        }
+    }
+
+    p{
+        text-align: left;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 150%;
+        color: $paragraph;
+        margin-top: 2.4rem;
+        margin-bottom: 6rem;
     }
 }

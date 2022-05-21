@@ -40,6 +40,22 @@ section {
   padding-block: 10rem;
 }
 
+section .header h4 {
+  font-size: 1.4rem;
+  line-height: 150%;
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
+  color: #00856f;
+  margin-bottom: 1.6rem;
+}
+
+section .header h2 {
+  font-size: 3rem;
+  line-height: 3.9rem;
+  color: #22262a;
+  margin-bottom: 6rem;
+}
+
 #logo2 {
   display: none;
 }
@@ -260,22 +276,6 @@ header .stats .stat p {
 }
 
 /* ==== SERVICES ==============*/
-#services .header h4 {
-  font-size: 1.4rem;
-  line-height: 150%;
-  letter-spacing: 0.8rem;
-  text-transform: uppercase;
-  color: #00856f;
-  margin-bottom: 1.6rem;
-}
-
-#services .header h2 {
-  font-size: 3rem;
-  line-height: 3.9rem;
-  color: #22262a;
-  margin-bottom: 6rem;
-}
-
 #services .cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -297,5 +297,36 @@ header .stats .stat p {
 
 #services .cards .card h3 {
   margin-block: 1.6rem;
+}
+
+#services .cards .card p {
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #484f56;
+}
+
+/* ==== ABOUT ==============*/
+#about {
+  background-color: floralwhite;
+}
+
+#about .header h2 {
+  margin-bottom: 2.4rem;
+  text-align: left;
+}
+
+#about .header h4 {
+  text-align: left;
+}
+
+#about p {
+  text-align: left;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 150%;
+  color: #484f56;
+  margin-top: 2.4rem;
+  margin-bottom: 6rem;
 }
 /*# sourceMappingURL=estilo.css.map */
