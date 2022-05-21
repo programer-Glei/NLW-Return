@@ -14,3 +14,11 @@ function onScroll(){
         menu.src = "assets/menu.svg"
     }
 }
+
+function openMenu(){
+    document.body.classList.add('menu-expanded')
+}
+
+function closeMenu(){
+    document.body.classList.remove('menu-expanded')
+}

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/estilo.css">
     <title>DOCTORCARE</title>
 </head>
-<body onscroll="onScroll()" class="menu-expanded">
+<body onscroll="onScroll()">
     <nav id="navigation">
         <div class="wrapper">
             <a href="#"><img src="assets/logo.svg" alt="" id="logo"><img src="assets/logo_nova.svg" alt="" id="logo2"></a>
@@ -24,8 +24,8 @@
                     <li><a href=""><img src="assets/you.svg" alt=""></a></li>
                 </ul>
             </div>
-            <a href="" class="open-menu" onclick="openMenu()"><img class="imgmenu" src="assets/menu.svg" alt=""></a>
-            <a href="" class="close-menu"><img src="assets/close.svg" alt=""></a>
+            <a href="#" class="open-menu" onclick="openMenu()"><img class="imgmenu" src="assets/menu.svg" alt=""></a>
+            <a href="#" class="close-menu" onclick="closeMenu()"><img src="assets/close.svg" alt=""></a>
         </div>
     </nav>
     <header class="wrapper">
@@ -49,6 +49,21 @@
             </div>
         </div>
     </header>
+    <section id="services">
+        <div class="wrapper">
+            <header>
+                <h4>Serviços</h4>
+                <h2>Como podemos ajudá-lo a se sentir melhor?</h2>
+            </header>
+            <div class="cards">
+                <div class="card">
+                    <img src="assets/tag.svg" alt="">
+                    <h3>Problemas digestivos</h3>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus provident illo autem minus?</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="java/main.js"></script>
 </body>
 </html>
