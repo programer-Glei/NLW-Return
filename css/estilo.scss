@@ -17,7 +17,12 @@ $headline: hsl(210, 11%, 15%);
 $paragraph: hsl(210, 9%, 31%);
 $brand-beige: hsl(39, 100%, 97%);
 $brand-light: hsl(148, 23%, 89%);
+$bg-light: hsl(180, 14%, 97%);
 $nav-height: 7.2rem;
+
+html{
+    scroll-behavior: smooth;
+}
 
 body,html{
     width: 100%;
@@ -30,12 +35,17 @@ body{
     text-align: center;
 
     overflow: overlay;
+    background-color: $bg-light;
 }
 
 .wrapper{
     width: 37.5rem;
     margin-inline: auto;
     padding-inline: 2.4rem;
+}
+
+section{
+    padding-block: 10rem;
 }
 
 #logo2{
@@ -142,7 +152,7 @@ body.menu-expanded{
 /* HEADER */
 
 header{
-    margin-top: calc(4.1rem + 7.2rem);
+    padding-top: calc(4.1rem + 7.2rem);
 
     h4{
         font-size: 1.4rem;
@@ -226,6 +236,44 @@ header{
                 margin: 0;
                 color: $primary-color;
                 line-height: 150%;
+            }
+        }
+    }
+}
+
+/* ==== SERVICES ==============*/
+#services{
+    .header{
+        h4{
+            font-size: 1.4rem;
+            line-height: 150%;
+            letter-spacing: 0.8rem;
+            text-transform: uppercase;
+            color: $primary-color;
+            margin-bottom: 1.6rem;
+        }
+
+        h2{
+            font-size: 3rem;
+            line-height: 3.9rem;
+            color: $headline;
+            margin-bottom: 6rem;
+        }
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        gap: 3.2rem;
+        .card{
+            padding: 2.4rem;
+            text-align: left;
+            background: white;
+            border: 0.1rem solid $brand-light;
+            border-radius: 0.6rem;
+
+            h3{
+                margin-block: 1.6rem;
             }
         }
     }
