@@ -44,6 +44,23 @@ body{
     padding-inline: 2.4rem;
 }
 
+.button{
+    width: 26.3rem;
+    height: 6.2rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: white;
+    background: $primary-color;
+    border-radius: 4rem;
+    margin-bottom: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.6rem;
+    margin: 0 auto;
+}
+
 section{
     padding-block: 10rem;
 
@@ -193,23 +210,6 @@ header{
         color: $paragraph;
         margin-bottom: 3.2rem;
     }
-    
-    button{
-        width: 26.3rem;
-        height: 6.2rem;
-        text-transform: uppercase;
-        font-size: 1.4rem;
-        font-weight: 700;
-        color: white;
-        background: $primary-color;
-        border-radius: 4rem;
-        margin-bottom: 6rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 1.6rem;
-        margin: 0 auto;
-    }
 
     .mulher{
         width: 26.4rem;
@@ -311,5 +311,15 @@ header{
         color: $paragraph;
         margin-top: 2.4rem;
         margin-bottom: 6rem;
+    }
+}
+
+/* ==== ABOUT ==============*/
+
+#contact{
+    text-align: left;
+
+    .header{
+        margin-bottom: 3.2rem;
     }
 }
