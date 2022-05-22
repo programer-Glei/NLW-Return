@@ -16,6 +16,7 @@ $primary-color: hsl(170, 100%, 26%);
 $headline: hsl(210, 11%, 15%);
 $paragraph: hsl(210, 9%, 31%);
 $brand-beige: hsl(39, 100%, 97%);
+$brand-button-hover: hsl(170,100%,14%);
 $brand-light: hsl(148, 23%, 89%);
 $bg-light: hsl(180, 14%, 97%);
 $nav-height: 7.2rem;
@@ -58,7 +59,12 @@ body{
     align-items: center;
     justify-content: center;
     gap: 1.6rem;
-    margin: 0 auto;
+    margin-inline: auto;
+
+    &:hover{
+        background: $brand-button-hover;
+        transition: background 0.2s;
+    }
 }
 
 section{
@@ -334,5 +340,36 @@ header{
             align-items: center;
             gap: 0.8rem;
         }
+    }
+
+    .button{
+        margin-top: 3.2rem;
+        margin-inline: 0;
+    }
+}
+
+/* ==== FOOTER ==============*/
+footer{
+    background: $primary-color;
+    padding-block: 6rem;
+    text-align: left;
+    color: white;
+
+    p{
+        line-height: 2;
+    }
+
+    #logo {
+        display: inline-block;
+        margin-bottom: 2.4rem;
+        width: 23.6rem;
+        height: 3.1rem;
+    }
+
+    .social-links{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 3.2rem;
     }
 }

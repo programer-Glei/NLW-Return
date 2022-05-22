@@ -56,7 +56,13 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 1.6rem;
-  margin: 0 auto;
+  margin-inline: auto;
+}
+
+.button:hover {
+  background: #00473c;
+  -webkit-transition: background 0.2s;
+  transition: background 0.2s;
 }
 
 section {
@@ -359,5 +365,42 @@ header .stats .stat p {
       -ms-flex-align: center;
           align-items: center;
   gap: 0.8rem;
+}
+
+#contact .button {
+  margin-top: 3.2rem;
+  margin-inline: 0;
+}
+
+/* ==== FOOTER ==============*/
+footer {
+  background: #00856f;
+  padding-block: 6rem;
+  text-align: left;
+  color: white;
+}
+
+footer p {
+  line-height: 2;
+}
+
+footer #logo {
+  display: inline-block;
+  margin-bottom: 2.4rem;
+  width: 23.6rem;
+  height: 3.1rem;
+}
+
+footer .social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 3.2rem;
 }
 /*# sourceMappingURL=estilo.css.map */
