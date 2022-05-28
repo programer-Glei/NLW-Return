@@ -180,7 +180,7 @@ body.menu-expanded .menu .social-links {
   gap: 3.2rem;
 }
 
-body.menu-expanded .menu .button {
+body.menu-expanded .menu .nav-bottom {
   background: white;
   border-radius: 4rem;
   font-weight: 700;
@@ -192,6 +192,11 @@ body.menu-expanded .menu .button {
   padding: 1.6rem 3.2rem;
   margin-top: 4.8rem;
   margin-bottom: 8rem;
+}
+
+body.menu-expanded .menu .nav-bottom:hover {
+  background: #00856f;
+  color: white;
 }
 
 body.menu-expanded .menu, body.menu-expanded .close-menu {
@@ -382,6 +387,7 @@ footer {
 
 footer p {
   line-height: 2;
+  margin-bottom: 3.2rem;
 }
 
 footer #logo {
@@ -398,9 +404,9 @@ footer .social-links {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   gap: 3.2rem;
 }
 /*# sourceMappingURL=estilo.css.map */
