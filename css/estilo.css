@@ -119,15 +119,35 @@ nav.scroll {
 }
 
 /* ==== MENU-EXPANDED ==============*/
-.menu, .close-menu {
+.close-menu {
   display: none;
+}
+
+.menu {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
 }
 
 body.menu-expanded {
   overflow: hidden;
 }
 
+body.menu-expanded > :not(nav) {
+  display: none;
+}
+
+body.menu-expanded nav {
+  position: relative;
+}
+
 body.menu-expanded #logo {
+  display: none;
+}
+
+body.menu-expanded .open-menu {
   display: none;
 }
 
@@ -137,8 +157,12 @@ body.menu-expanded #logo2, body.menu-expanded .close-menu {
   z-index: 1;
 }
 
+body.menu-expanded .menu, body.menu-expanded .close-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
 body.menu-expanded .menu {
-  display: block;
   position: fixed;
   top: 0;
   left: 0;
@@ -146,6 +170,12 @@ body.menu-expanded .menu {
   width: 100vw;
   height: 100vh;
   padding-top: 7.2rem;
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 
 body.menu-expanded .menu ul:nth-child(1) {
@@ -197,15 +227,6 @@ body.menu-expanded .menu .nav-bottom {
 body.menu-expanded .menu .nav-bottom:hover {
   background: #00856f;
   color: white;
-}
-
-body.menu-expanded .menu, body.menu-expanded .close-menu {
-  opacity: 1;
-  visibility: visible;
-}
-
-body.menu-expanded nav {
-  position: relative;
 }
 
 /* HEADER */
@@ -342,7 +363,7 @@ header .stats .stat p {
   margin-bottom: 6rem;
 }
 
-/* ==== ABOUT ==============*/
+/* ==== CONTACT ==============*/
 #contact {
   text-align: left;
 }

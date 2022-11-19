@@ -117,14 +117,33 @@ nav{
 }
 
 /* ==== MENU-EXPANDED ==============*/
-.menu,.close-menu{
+.close-menu{
     display: none;
+}
+
+.menu{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(100%);
 }
 
 body.menu-expanded{
     overflow: hidden;
 
+    & > :not(nav){
+        display: none;
+    }
+
+    nav{
+        position: relative;
+    }
+
     #logo{
+        display: none;
+    }
+
+    .open-menu{
         display: none;
     }
 
@@ -134,8 +153,12 @@ body.menu-expanded{
         z-index: 1;
     }
 
+    .menu,.close-menu{
+        opacity: 1;
+        visibility: visible;
+    }
+
     .menu{
-        display:block;
         position: fixed;
         top: 0;
         left: 0;
@@ -143,6 +166,8 @@ body.menu-expanded{
         width: 100vw;
         height: 100vh;
         padding-top: 7.2rem;
+        transition: transform 300ms;
+        transform: translateY(0);
 
         ul:nth-child(1){
             display: flex;
@@ -185,15 +210,6 @@ body.menu-expanded{
                 color: white;
             }
         }
-    }
-
-    .menu,.close-menu{
-        opacity: 1;
-        visibility: visible;
-    }
-
-    nav{
-        position: relative;
     }
 }
 
