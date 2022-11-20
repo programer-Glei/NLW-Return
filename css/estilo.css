@@ -99,6 +99,7 @@ nav {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   padding-block: 1.6rem;
+  z-index: 10;
 }
 
 nav .wrapper {
@@ -170,10 +171,10 @@ body.menu-expanded .menu {
   width: 100vw;
   height: 100vh;
   padding-top: 7.2rem;
-  -webkit-transition: -webkit-transform 300ms;
-  transition: -webkit-transform 300ms;
-  transition: transform 300ms;
-  transition: transform 300ms, -webkit-transform 300ms;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
