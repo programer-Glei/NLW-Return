@@ -133,7 +133,7 @@ body.menu-expanded{
     overflow: hidden;
 
     & > :not(nav){
-        display: none;
+        visibility: hidden;
     }
 
     nav{
