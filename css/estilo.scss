@@ -100,9 +100,8 @@ nav{
     height: $nav-height;
     position: fixed;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
     padding-block: 1.6rem;
+    width: 100vw;
     z-index: 10;
 
     .wrapper{
