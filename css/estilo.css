@@ -114,7 +114,6 @@ nav .wrapper {
 
 nav.scroll {
   background: #00856f;
-  width: 100vw;
 }
 
 /* ==== MENU-EXPANDED ==============*/
@@ -136,10 +135,6 @@ body.menu-expanded {
 
 body.menu-expanded > :not(nav) {
   visibility: hidden;
-}
-
-body.menu-expanded nav {
-  position: relative;
 }
 
 body.menu-expanded #logo {

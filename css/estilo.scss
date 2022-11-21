@@ -112,7 +112,6 @@ nav{
 
     &.scroll{
         background: $primary-color;
-        width: 100vw;
     }
 }
 
@@ -134,11 +133,7 @@ body.menu-expanded{
     & > :not(nav){
         visibility: hidden;
     }
-
-    nav{
-        position: relative;
-    }
-
+    
     #logo{
         display: none;
     }
