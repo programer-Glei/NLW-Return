@@ -133,7 +133,7 @@ body.menu-expanded{
     & > :not(nav){
         visibility: hidden;
     }
-    
+
     #logo{
         display: none;
     }
@@ -346,21 +346,23 @@ header{
         margin-bottom: 3.2rem;
     }
 
-    ul{
-        display: flex;
-        flex-direction: column;
-        gap: 1.6rem;
-
-        li{
+    .content {
+        ul{
             display: flex;
-            align-items: center;
-            gap: 0.8rem;
+            flex-direction: column;
+            gap: 1.6rem;
+    
+            li{
+                display: flex;
+                align-items: center;
+                gap: 0.8rem;
+            }
         }
-    }
-
-    .button{
-        margin-top: 3.2rem;
-        margin-inline: 0;
+    
+        .button{
+            margin-top: 3.2rem;
+            margin-inline: 0;
+        }
     }
 }
 

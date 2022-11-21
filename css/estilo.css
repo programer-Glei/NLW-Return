@@ -366,7 +366,7 @@ header .stats .stat p {
   margin-bottom: 3.2rem;
 }
 
-#contact ul {
+#contact .content ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -377,7 +377,7 @@ header .stats .stat p {
   gap: 1.6rem;
 }
 
-#contact ul li {
+#contact .content ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -387,7 +387,7 @@ header .stats .stat p {
   gap: 0.8rem;
 }
 
-#contact .button {
+#contact .content .button {
   margin-top: 3.2rem;
   margin-inline: 0;
 }
