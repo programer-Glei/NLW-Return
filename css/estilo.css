@@ -392,6 +392,10 @@ header .stats .stat p {
   margin-inline: 0;
 }
 
+#contact .content .imagem {
+  width: 100%;
+}
+
 /* ==== FOOTER ==============*/
 footer {
   background: #00856f;
