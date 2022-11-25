@@ -434,5 +434,12 @@ footer .social-links {
   position: fixed;
   bottom: 1rem;
   right: 2.5rem;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#backto.show {
+  opacity: 1;
+  visibility: visible;
 }
 /*# sourceMappingURL=estilo.css.map */
