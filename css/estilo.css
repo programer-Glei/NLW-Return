@@ -428,4 +428,9 @@ footer .social-links {
           justify-content: flex-start;
   gap: 3.2rem;
 }
+
+/* BACK TO TOP */
+#backto {
+  position: fixed;
+}
 /*# sourceMappingURL=estilo.css.map */
